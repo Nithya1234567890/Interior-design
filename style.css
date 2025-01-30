@@ -6,16 +6,49 @@
     font-family: "Inter", serif;
     font-optical-sizing: auto;
 }
-html{
-    margin: 0 !important;
+.toggle{
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    right: -390px;
+    background-color: #1F1F1F;
+    color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+}
+.toggle ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+.toggle li{
+    margin-bottom: 30px;
+}
+.toggle li a{
+    color: #d9d9d9;
+    text-decoration: none;
 }
 .navbar{
-    width: 100%;
+    width: 91%;
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
-    margin:15px 0;
+    padding: 40px 0;
+    margin: auto;
+    margin-block: 15px;
     align-items: center;
+}
+.navbar .left{
+    margin: 0;
+}
+.navbar .left img{
+    margin: 0;
+}
+.navbar .middle{
+    margin: 0;
+}
+.navbar .right{
+    margin: 0;
 }
 ul{
     display: flex;
@@ -38,7 +71,7 @@ a{
     border-radius: 3px;
     padding: 13px 35px;
     font-weight: bold;
-    margin-right: 10px;
+    margin-right: 18px;
 }
 .hero-section{
     width: 100%;
@@ -51,7 +84,7 @@ a{
     text-align: left;
 }
 .hero-section .left h1{
-    font-size: 120px;
+    font-size: 110px;
     font-weight: 500;
     margin-bottom: 40px;
 }
@@ -105,7 +138,7 @@ a{
 }
 .project .right .down-arrow{
     position: absolute;
-    right: -78px;
+    right: -69px;
     bottom: -89px;
     border-radius: 2px; 
     background: #1F1F1F;
@@ -359,7 +392,7 @@ a{
     width: 60%;
     margin: auto;
     align-items: center;
-    margin-top: 170px;
+    margin-top: 100px;
     text-align: center;
     background-color: white;
 }
@@ -404,7 +437,7 @@ footer{
     left: 0;
     z-index: -1;
     margin: 0;
-    bottom: -4175px;
+    bottom: -4525px;
 }
 footer p{
     color: #D1D1D1;
@@ -442,19 +475,398 @@ footer .right .serv .head{
 footer .right .serv p{
     margin-bottom: 10px;
 }
+@media (max-width:850px){
+    *,body,html{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body,html{
+        width: 100%;
+    }
+    .hole{
+        width: 100%;
+    }
+    .navbar{
+        margin: 0;
+        padding-inline: 40px;
+        width: 100%;
+    }
+    .navbar .middle li{
+        margin-inline: 8px;
+    }
+    .navbar .middle li a{
+        font-size: 15px;
+    }
+    .navbar img{
+        width: 123px;
+        height: 28px;
+    }
+    .hero-section{
+        width: 100%;
+        margin-top: 30px;
+        padding-inline: 50px;
+    }
+    .hero-section .left h1{
+        font-size: 65px;
+        margin-bottom: 10px;
+    }
+    .hero-section .left div{
+        width: 350px !important;
+        line-height: 18.12px !important;
+        font-size: 10px !important;
+        margin-bottom: 30px;
+    }
+    .hero-section .left {
+        width: 64%;
+        margin-right: 0;
+        margin-top: 0;
+    }
+    .hero-section .right{
+        width: 35%;
+        display: flex;
+        justify-content: right;
+    }
+    .hero-section .right img{
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .signup-button {
+        padding: 10px 30px;
+    }
+    .project{
+        width: 100%;
+        padding-inline: 50px;
+    }
+    .project .left{
+        width: 47%;
+        margin: 0;
+    }
+    .project .left button{
+        width: 250px !important;
+        height: 60px !important;
+    }
+    .project .left .count{
+        margin-top: 25px;
+        flex-direction: column;
+        width: 80%;
+    }
+    .project .left .count1{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .project .left .count1 span{
+        font-size: 1.5rem;
+        margin-bottom: 0px;
+    }
+    .project .left .count1 p{
+        font-size: 16px;
+    }
+    .project .right{
+        width: 52%;
+    }
+    .project .right img{
+        top: 17px;
+        left: 17px;
+        width: 90%;
+        height: 85%;
+    }
+    .project .rectangle {
+        width: 105px;
+        height: 105px;
+    }
+    .project .right .down-arrow {
+        right: -5px;
+        bottom: 22px;
+        width: 50px;
+        height: 50px;
+        font-size: 2rem;
+    }
+    .services{
+        margin-top: 70px;
+        width: 100%;
+        padding-inline: 50px;
+    }
+    .services .heading span{
+        font-size: 43px !important;
+    }
+    .services .service-box{
+        margin:47px 0;
+    }
+    .service .right h2 {
+        color: #1f1f1f;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .service .right p {
+        font-size: 10px;
+    }
+    .service .right {
+        margin: 0;
+        padding: 2px 20px;
+    }
 
+
+    .dream{
+        width: 100%;
+        margin-top: 65px;
+        justify-content: space-between;
+        padding-inline: 50px;
+    }
+    .dream .left{
+        width: 46%;
+        display: flex;
+        justify-content: left;
+    }
+    .dream .left img{
+        width: 100%;
+        height: 100%;
+    }
+    .dream .right{
+        width: 49%;
+    }
+    .dream .right .heading{
+        font-size: 43px;
+        margin-bottom: 15px;
+    }
+    .dream .right p{
+        font-size: 12px;
+        line-height: 20.65px;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .dream .right .option {
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+        font-weight: 600;
+        margin: 0;
+        padding-bottom: 16px;
+        margin-bottom: 10px;
+    }
+    .dream .right .option p{
+        font-size: 15px;
+    }
+    .dream .right button{
+        margin-top: 8px;
+        height: 50px !important;
+        font-size: 20px !important;
+    }
+    .design{
+        width: 100%;
+        margin-top: 70px;
+        justify-content: space-between;
+        padding-inline: 50px;
+    }
+    .design .left{
+        width: 50%;
+    }
+    .design .left .heading{
+        margin-bottom: 0px;
+        font-size: 42px;
+    }
+    .design .right{
+        width: 49%;
+        display: flex;
+        justify-content: right;
+    }
+    .design .right img{
+        width: 100%;
+        height: 100%;
+    }
+    .design .left .steps{
+        margin-top: 20px;
+    }
+    .design .left .steps .step{
+        margin-bottom: 13px;
+    }
+    .design .left .steps .step .left{
+        width: 25%;
+    }
+    .design .left .steps .step .left img{
+        margin-bottom: 15px;
+    }
+    .design .left .steps .step .left .line{
+        height: 50px;
+
+    }
+    .design .left .steps .step .right{
+        width: 73%;
+    }
+    .design .left .steps .step .right p{
+        font-size: 12px;
+        line-height: 17.65px;
+    }
+    .design .left .steps .step h5{
+       margin-bottom: 10px;
+    }
+
+
+    .feedback{
+        width: 100%;
+        margin-top: 85px;
+        justify-content: space-between;
+    }
+    .feedback .left{
+        width: 49%;
+    }
+    .feedback .left .arrows{
+        margin-top: 10px;
+    }
+    .feedback .left .ar{
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    #back{
+        width: 100%;
+        height: 362px;
+    }
+    .feedback .right{
+        width: 50%;
+        text-align: center;
+    }
+    .feedback .right .heading{
+        font-size: 40px;
+    }
+    .feedback-box1 {
+        color: #ffff;
+        padding: 30px;
+        padding-top: 50px;
+        border: 9px solid white;
+        width: 300px;
+        height:300px;
+        justify-content: space-evenly;
+        top: 119px;
+        left: -262px;
+    }
+    .feedback-box2 {
+        color: #ffff;
+        padding: 30px;
+        padding-top: 50px;
+        border: 9px solid white;
+        width: 300px;
+        height: 300px;
+        justify-content: space-evenly;
+        top: 119px;
+        left: 62px;
+    }
+    .feedback-box1 p, .feedback-box2 p{
+        font-weight: 400; 
+        line-height: 19.65px;
+        font-size: 10px;
+    }
+    .feedback-box1 .quote,.feedback-box2 .quote{
+        margin-top: -30px;
+        font-weight: 400;
+        font-size: 60px !important;
+    }
+    .feedback-box1 .profile, .feedback-box2 .profile{
+        display: flex;
+        margin-left: 0;
+        align-items: center;
+    }
+    .profile .left{
+        margin: 0;
+        width: 35%;
+    }
+    .profile .left img{
+        width: 45px;
+        height: 45px;
+    }
+    .profile .right{
+        margin: 0;
+        text-align: left;
+    }
+    .profile .right .name{
+        font-size: 15px !important;
+    }
+    .profile .right p{
+        font-size: 10px !important;
+    }
+
+
+    .subscribe{
+        margin-top: 90px;
+        width: 70%;
+    }
+    .subscribe .heading{
+        font-size: 43px;
+        margin-bottom: 0;
+    }
+    .subscribe p{
+        margin-top: 0px;
+        padding: 40px 60px;
+    }
+    .subscribe .input-box button{
+        width: 180px !important ;
+        height: 60px !important;
+        font-size: 20px;
+    }
+    .subscribe .input-box .left img{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .subscribe .input-box{
+        padding: 10px;
+    }
+    footer{
+        position: relative;
+        width: 100%;
+        top: -32px;
+    }
+    footer .left{
+        width: 30%;
+    }
+    footer .left p{
+        font-size: 13px !important;
+        line-height: 20px !important;
+    }
+    footer .right p{
+        font-size: 12px !important;
+    }
+    footer .left img{
+        width: 120px;
+        height: 35px;
+        margin-bottom: 15px !important;
+    }
+    footer .left .icons{
+        margin-left: 0;
+    }
+    footer .left .icons img{
+        width: 26px;
+        height: 26px;
+        margin-right: 13px;
+        margin-left: 0;
+    }
+    footer .right{
+        width: 100%;
+        justify-content: space-between;
+        margin-left: 20px;
+    }
+    footer .right .serv{
+        margin: 28px 10px;
+    }
+    footer .right .serv .head{
+        font-size: 18px;
+    }
+}
 @media (max-width: 480px){
     *,body,html{
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
+    }
+    body,html{
+        width: 100%;
     }
     .navbar{
         justify-content: space-between;
-        margin: 0 30px;
         box-sizing: border-box;
-        padding: 20px;
-        padding-left: 0;
-        margin-right: 0;
+        padding: 25px;
+        margin: 0;
+        width: 100%;
     }
     .navbar img{
         width: 110px;
@@ -475,55 +887,68 @@ footer .right .serv p{
     .hamburger{
         display: flex;
         flex-direction: column;
+        align-items: flex-end;
     }
     .hamburger .line{
         width: 30px;
         height: 1px;
         border-bottom: 3px solid black;
+        margin: 0;
         margin-bottom: 5px;
     }
     .hero-section{
         flex-direction: column;
         text-align: center;
         align-items: center;
-        margin: 20px;
-        padding-top: 0;
-        margin-top: 0;
-        margin-bottom: 40px;
-        margin-right: 0;
-        margin-left: 15px;
+        width: 100%;
+        margin: 0;
+        padding-block: 15px;
     }
     .hero-section .left{
         text-align: center;
+        width: 100%;
+        margin: 0 !important;
     }
     .hero-section .left h1{
-        font-size: 80px;
+        font-size: 60px;
         margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+        line-height: 65px;
+    }
+    .hero-section .right{
+        width: 100%;
+        margin-top: 20px;
     }
     .hero-section .right img{
         width: 100% !important;
-        height: 300px !important;
+        height: 250px !important;
         margin: 0 !important;
     }
     .hero-section .left div{
         width: 100% !important;
-        font-size: 16px !important;
-        line-height: 28px !important;
-        padding: 20px !important;
+        font-size: 13px !important;
+        line-height: 22px !important;
+        padding: 0px !important;
+        margin-bottom: 0 !important;
     }
     .project{
         flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+        padding-inline: 30px;
     }
     .project .left{
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 14px;
     }
-    .project .count{
-        margin-top: 20px;
-        padding: 25px;
+    .project .left .count{
+        flex-direction: row;
+        margin-top: 30px;
+        width: 100%;
+        justify-content: space-evenly;
     }
     .project .count .count1{
         justify-content: center;
@@ -537,7 +962,8 @@ footer .right .serv p{
         text-align: center;
     }
     .project .right{
-        margin-left: 30px;
+        width: 90%;
+        margin: auto;
         margin-top: 20px;
     }
     .project .right .rectangle {
@@ -549,12 +975,12 @@ footer .right .serv p{
     .project .right img {
     top: 15px;
     left: 15px;
-        width: 300px !important;
-        height: 200px !important;
+        width: 90% !important;
+        height: 180px !important;
     }
     .project .right .down-arrow{
-        right: -155px;
-        bottom: -215px;
+        right: -15px;
+        bottom: -195px;
         width: 50px;
         height: 50px;
         color: #ffff;
@@ -563,71 +989,75 @@ footer .right .serv p{
 
 
     .services{
-        margin-top: 270px;
-        padding-left: 50px;
+        margin-top: 240px;
+        padding-inline: 45px;
     }
     .services .heading span{
-        font-size: 45px !important;
+        font-size: 36px !important;
         margin-right: 0;
     }
     .services .line{
         width: 60px;
         height: 2px;
     }
-    .service-box{
-        margin: 55px 0;
+    .services .service-box{
+        margin: 40px 0;
         justify-content: space-between;
         flex-direction: column;
+        width: 100%;
     }
     .services .service{
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     .service .right{
-        margin-left: 23px;
+        margin-left: 30px;
+        width: 100%;
+        padding: 0;
     }
     .service .right h2{
-        margin-bottom: 15px;
+        margin-bottom: 8px;
     }
 
 
     .dream{
         margin-top: 20px;
         flex-wrap: wrap-reverse;
-        margin-left: 20px;
         text-align: center;
         width: 100%;
+        padding-inline: 45px;
     }
     .dream .right{
+        width: 100%;
+        padding: 0;
     }
     .dream .right .heading{
-        font-size: 45px;
+        font-size: 40px;
         font-weight: 500;
         color: #1F1F1F;
         margin-bottom: 10px;
     }
     .dream .right p{
         color: #545454; 
-        font-size: 15px; 
+        font-size: 14px; 
         font-weight: 500; 
-        line-height: 29.65px;
+        line-height: 20.65px;
         margin-bottom: 50px;
         margin-right: 0;
     }
     .dream .right .option{
         display: flex;
         justify-content: space-between;
-        font-size: 24px;
+        font-size: 15px;
         font-weight: 600;
         margin: 0;
-        padding-bottom: 20px;
-        margin-bottom: 30px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
         border-bottom: 1px solid #6a6a6a;
     }
     .dream .right .option p{
         color: #1F1F1F;
-        margin-bottom: 0;
-        margin-left: 0;
-        padding-left: 0;
+        margin: 0;
+        font-size: 13px;
     }
     .dream .right button{
         margin: auto;
@@ -637,7 +1067,7 @@ footer .right .serv p{
     }
     .dream .left img{
         width: 100%;
-        height: 370px;
+        height: 280px;
         margin-top: 40px;
     }
 
@@ -645,28 +1075,35 @@ footer .right .serv p{
 
 
     .design{
-        margin-top: 60px;
+        margin-top: 50px;
         text-align: center;
-        margin-left: 14px;
         flex-direction: column;
+        width: 100%;
+    }
+    .design .left{
+        width: 100%;
+    }
+    .design .right{
+        width: 100%;
+        margin-top: 20px;
     }
     .design .left .heading{
-        font-size: 45px;
-        margin-bottom: 10px;
+        font-size: 40px;
+        margin-bottom: 30px;
     }
     .design .left .steps{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin: 33px 30px;
+        margin: 0;
     }
     .design .right img{
         width: 100%;
-        height: 380px;
+        height: 280px;
     }
-    .steps .step{
+    .design .left .steps .step{
         text-align: left;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
     .steps .step .right{
         margin-left: 28px;
@@ -699,18 +1136,17 @@ footer .right .serv p{
         flex-direction: column;
         width: 94%;
         margin: auto;
-        margin-left: 22px;
         align-items: center;
-        margin-top: 90px;
+        margin-top: 60px;
         text-align: center;
         background-color: white;
     }
     .subscribe .heading{
-        font-size: 45px;
+        font-size: 40px;
         margin-bottom: 0;
     }
     .subscribe p{
-        font-size: 16px;
+        font-size: 14px;
         color: #545454;
         font-weight: 400;
         padding: 30px 30px;
@@ -722,7 +1158,7 @@ footer .right .serv p{
         align-items: center;
         background-color: white;
         box-shadow: 0px 10px 100px rgba(0, 0, 0, 0.14);
-        padding: 18px;
+        padding: 8px;
     }
     .subscribe .input-box .left{
         display: flex;
@@ -738,7 +1174,8 @@ footer .right .serv p{
     }
     .subscribe .input-box .left img{
         padding: 0;
-        margin: 0;
+        margin-left: 6px;
+        margin-right: 9px;
     }
 
     .subscribe .input-box button{
@@ -751,7 +1188,6 @@ footer .right .serv p{
 
     .feedback{
         margin: 0;
-        margin-left: 15px;
         margin-top: 80px;
         position: relative;
         display:flex;
@@ -761,7 +1197,7 @@ footer .right .serv p{
     }
     #back{
         width: 100%;
-        height: 950px;
+        height: 100%;
         position: absolute;
         top: 0;
         left: 0;
@@ -772,8 +1208,8 @@ footer .right .serv p{
         width: 100%;
     }
     .feedback .right .heading{
-        font-size: 45px;
-        margin-bottom: 20px;
+        font-size: 40px;
+        margin-bottom: 10px;
         margin-top: 30px;
         text-align: center;
     }
@@ -860,19 +1296,22 @@ footer .right .serv p{
 
     footer{
         position: relative;
-        margin: 0;
-        width: 107%;
-        top: 10px;
+        margin: auto;
+        width: 100%;
+        top: -30px;
         flex-direction: column;
-        padding-top: 60px;
+        padding-top: 80px;
+        z-index: -1;
     }
     footer .left{
         display: flex;
         flex-direction: column;
-        width: 20%;
         margin-top: 0px;
         width: 100%;
         margin-bottom: 30px;
+    }
+    footer .left img{
+        width: 130px;
     }
     footer .left .icons{
         display: flex;
@@ -880,7 +1319,8 @@ footer .right .serv p{
         margin-left: 0;
     }
     footer .left .icons img{
-        margin: 0 10px;
+        margin-left: 0;
+        margin-right: 20px;
     }
     footer .right{
         width: 100%;
@@ -890,8 +1330,8 @@ footer .right .serv p{
     footer .right .serv{
         display: flex;
         flex-direction: column;
-        margin: 28px 30px;
-        margin-left: 0;
+        margin: 0;
+        margin-bottom: 30px;
     }
     footer .right .serv .head{
         color: white; 
